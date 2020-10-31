@@ -1,0 +1,42 @@
+@import "../scss/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background: $secondary;
+  padding: 0.5em 0 1em 0.5em;
+  font-weight: bold;
+  text-align: right;
+  position: relative;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50px;
+    top: 0;
+    margin-left: 1em;
+    transform: skew(-30deg);
+    background: $secondary;
+    left: 140px;
+    z-index: -1;
+  }
+}
+.logo__head {
+  font-size: 1.25rem;
+  text-decoration: underline;
+}
+
+.logo__subhead {
+  font-size: 0.5rem;
+}
+
+.resume {
+  background: $secondary;
+  min-width: 4.375rem;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
