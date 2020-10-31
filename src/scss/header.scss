@@ -40,3 +40,18 @@
   min-width: 4.375rem;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
+
+@media (max-width: 800px) {
+  .logo {
+    background: $secondary;
+    width: 100%;
+    text-align: center;
+    &::after {
+      display: none;
+    }
+  }
+
+  .resume {
+    display: none;
+  }
+}

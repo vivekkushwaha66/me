@@ -15,7 +15,7 @@ function Contact() {
                             <input type="text" className="input" placeholder="Phone No" />
                             <input type="text" className="input" placeholder="Subject" />
                         </div>
-                        <textarea name="" id="" cols="110" rows="2" className="query"></textarea>
+                        <textarea placeholder="Query" name="" id="" cols="110" rows="2" className="query"></textarea>
                         <br />
                         <button className="button">Submit</button>
                     </div>

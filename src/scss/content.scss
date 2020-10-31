@@ -42,7 +42,7 @@ $margin: 2.5rem;
   background: $secondary;
   border-radius: 5px;
   border: 2.5px solid $accent;
-  
+
   .tech-container {
     width: 100%;
     display: flex;
@@ -52,3 +52,38 @@ $margin: 2.5rem;
   }
 }
 
+@media (max-width: 1200px) {
+  .profile {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .profile__photo {
+    text-align: center;
+    margin: 0;
+  }
+  .profile__summary {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile__technology {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tech-container {
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tech {
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+  }
+}

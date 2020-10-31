@@ -49,3 +49,19 @@
     transform: scale(1.05);
   }
 }
+
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .query {
+    max-width: 100%;
+  }
+
+  .input {
+    margin: 0.5rem;
+  }
+}
