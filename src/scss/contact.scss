@@ -1,0 +1,51 @@
+@import "./variables";
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact {
+  background: $secondary;
+  border: 2.5px solid $accent;
+  border-radius: 5px;
+  margin-right: 2rem;
+  padding: 1em;
+}
+.form {
+  margin-top: 1rem;
+}
+.input {
+  font-family: $ff;
+  border: none;
+  min-height: 28px;
+  font-size: 14px;
+  margin-right: 1rem;
+  padding: 0.5em;
+  min-width: 200px;
+}
+.query {
+  margin-top: 1em;
+  border: none;
+  resize: none;
+  font-family: $ff;
+  padding: 1em;
+}
+
+.button {
+  border: none;
+  background: $primary;
+  color: white;
+  margin-top: 1em;
+  font-size: 14px;
+  padding: 0.5em 2em;
+  transition: all 200ms ease-in-out;
+  font-family: $ff;
+  font-weight: 500;
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}

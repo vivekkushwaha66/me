@@ -1,3 +1,20 @@
+@import "./variables";
+
 .social {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social__icon {
+  transition: all 100ms ease-in-out;
+  img {
+    width: 48px;
+    height: 48px;
+  }
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background: $primary;
+  }
 }

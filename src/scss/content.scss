@@ -1,0 +1,54 @@
+@import "./variables";
+
+$margin: 2.5rem;
+.content {
+  padding: 1em;
+  margin-top: 2rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+.profile__photo {
+  margin-right: $margin;
+  img {
+    width: 150px;
+    height: 150px;
+    border: 2.5px solid $accent;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.profile__summary {
+  max-width: 450px;
+  margin-right: $margin;
+  padding: 0.75em;
+  background: $secondary;
+  border-radius: 5px;
+  border: 2.5px solid $accent;
+
+  p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+  }
+}
+
+.profile__technology {
+  width: 450px;
+  padding: 0.75em;
+  background: $secondary;
+  border-radius: 5px;
+  border: 2.5px solid $accent;
+  
+  .tech-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+}
+
