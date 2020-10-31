@@ -50,18 +50,23 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .contact-container {
     flex-direction: column;
     margin: 1rem;
     text-align: center;
   }
 
+  .form__group {
+    text-align: center;
+  }
   .query {
     max-width: 100%;
+    width: 100%;
   }
 
   .input {
-    margin: 0.5rem;
+    width: 100%;
+    margin: 0.5rem 0;
   }
 }
